@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+  background: #72a2af;
+  color: black;
+  text-align: center;
+  font-family: 'Azeret Mono', monospace;
+}
+.foto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  img {
+    width: 300px;
+  }
+}
+
+.tabs-container {
+  $borderColor: rgb(85, 83, 83);
+  display: grid;
+  margin: 30px;
+  grid-template-columns: 200px 1fr;
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    button {
+      height: 50px;
+      background: rgb(176, 212, 224);
+      border: 2px solid $borderColor;
+      border-left: none;
+      margin-right: 3px;
+      transition: background 0.3s;
+      position: relative;
+      &:hover {
+        background: white;
+      }
+      &::before {
+        content: '';
+        width: 4px;
+        height: 46px;
+        background-color: $borderColor;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      @media (max-width: 800px) {
+        margin-right: 0;
+      }
+    }
+    .active {
+      background: white;
+      margin-right: -2px;
+      border-right-color: white;
+      z-index: 1;
+      &::before {
+        width: 5px;
+        background-color: crimson;
+      }
+      @media (max-width: 800px) {
+        border-right-color: $borderColor;
+        margin-right: 0;
+      }
+    }
+  }
+  .tab {
+    display: none;
+    background-color: white;
+    border: 2px solid $borderColor;
+    padding: 30px;
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: 350px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: rotateZ(360deg) scale(1.1);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+p {
+  margin: 30px 50px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: rgb(75, 71, 71);
+  font-weight: 400;
+  text-align: justify;
+}
+
+h2 {
+  font-weight: 500;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+
+    <title>15 paskaitos ND</title>
+  </head>
+  <body>
+    <h2 id="header">ĮDOMŪS FAKTAI APIE ŽUVIS</h2>
+    <div class="tabs-container">
+      <div class="tabs">
+        <button onmouseover="changeHeader(event, 'pirmas')" onclick="changeHeader(event, 'pirmas')">
+          SKRAIDANTI ŽUVIS
+        </button>
+        <button onmouseover="changeHeader(event, 'antras')" onclick="changeHeader(event, 'antras')">
+          NEĮTIKĖTINA, BET TIKRA
+        </button>
+        <button
+          onmouseover="changeHeader(event, 'trecias')"
+          onclick="changeHeader(event, 'trecias')"
+        >
+          KLOUNINĖ ŽUVIS
+        </button>
+      </div>
+      <div id="pirmas" class="tab">
+        <img src="img/skraiduole.jpeg" alt="skraiduole" />
+        <p>
+          Verta atkreipti dėmesį į kitus įdomius faktus apie žuvis, kurie iš pirmo žvilgsnio atrodo
+          neįtikėtini. Taigi, žinoma, kad šie padarai taip pat gali nuskęsti. Jei vandenyje yra
+          nedaug deguonies, žuvis gali uždusti, nes oras yra svarbus jos gyvenimui. Imperijos angelų
+          šeima turi labai neįprastą porūšį. Patinai turi keletą žmonų. Bet jei jis miršta, patelė
+          užima jo vietą. Nuostabiausia, kad ji keičia savo lytį į „haremą“.
+        </p>
+      </div>
+      <div id="antras" class="tab">
+        <img src="img/haremas.jpeg" alt="haremas" />
+        <p>
+          Kitas povandeninio pasaulio atstovas yra skraidančios žuvys. Įdomūs faktai apie ją taip
+          pat įspūdingi. Šios žuvys turi didelius pelekus, kurie padeda tam tikrą laiką joti virš
+          vandens. Skrydžio metu jų greitis gali išaugti iki 80 km / h. Šios žuvys ore sklando
+          vidutiniškai 50 metrų. Tačiau pasisekę jie gali pratęsti skrydį dėl užfiksuoto oro srauto.
+          Dėl pelekų žuvys gali pakeisti skrydžio kryptį. Šių būtybių ikrai yra plačiai naudojami
+          Japonijoje gaminant suši. Jis vadinamas tobiko.
+        </p>
+      </div>
+      <div id="trecias" class="tab foto">
+        <img src="img/nemo.jpeg" alt="nemo" />
+        <p>
+          Kitas neįprastas jūrinės faunos atstovas yra klouninės žuvys. Įdomūs faktai apie šias
+          būtybes yra labai ryškūs ir linksmi. Nepaisant mažo dydžio, ši žuvis yra labai drąsi ir
+          tvirtai saugo savo teritoriją nuo nekviestų svečių. Ji pasirengusi kovoti net su narais,
+          kuriuos ji suvokia kaip kėsinimąsi į savo turtą. Savo pykčiu klounas gali net įkandinėti
+          žmogų (žuvų dantys nėra aštrūs). Taip pat faktas, kad teritoriją saugo tik moterys. Šios
+          žuvys gyvena jūrų anemose. Nepaisydami savo karo būdo, jie bijo plaukti toliau nuo savo
+          namo nei per metrą. Po moters mirties kai kurie „berniukai“ keičia lytį. Visi mailius yra
+          gimę vyrai, tik su laiku kai kurie iš jų virsta „mergaitėmis“.
+        </p>
+      </div>
+      <div class="foto" id="foto">
+        <img src="img/rifas.jpeg" alt="rifas" />
+        <img src="img/godzila.jpeg" alt="godzila" />
+        <img src="img/kardzuve.jpeg" alt="kardzuve" />
+        <img src="img/velnias.jpeg" alt="velnias" />
+      </div>
+    </div>
+  </body>
+</html>
